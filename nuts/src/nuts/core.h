@@ -8,3 +8,5 @@
 #else
 #error nuts  only support Windows
 #endif // NT_PLATFORM_WINDOWS
+
+#define BIT(x) (1<<x)

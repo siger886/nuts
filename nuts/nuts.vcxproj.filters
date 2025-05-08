@@ -4,6 +4,9 @@
     <Filter Include="nuts">
       <UniqueIdentifier>{4F629B7C-3B99-9C0D-E485-8210D09B180F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="nuts\Events">
+      <UniqueIdentifier>{537F7FC7-BF34-F8BC-4829-F293B4DDEEC0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\nuts.h" />
@@ -12,6 +15,18 @@
     </ClInclude>
     <ClInclude Include="src\nuts\EntryPoint.h">
       <Filter>nuts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\Events\ApplicationEvent.h">
+      <Filter>nuts\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\Events\Event.h">
+      <Filter>nuts\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\Events\KeyEvent.h">
+      <Filter>nuts\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\Events\MouseEvent.h">
+      <Filter>nuts\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\nuts\Log.h">
       <Filter>nuts</Filter>
