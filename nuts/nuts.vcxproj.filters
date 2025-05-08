@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nuts">
+      <UniqueIdentifier>{4F629B7C-3B99-9C0D-E485-8210D09B180F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\nuts.h" />
+    <ClInclude Include="src\nuts\Application.h">
+      <Filter>nuts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\EntryPoint.h">
+      <Filter>nuts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\Log.h">
+      <Filter>nuts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nuts\core.h">
+      <Filter>nuts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\nuts\Application.cpp">
+      <Filter>nuts</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nuts\Log.cpp">
+      <Filter>nuts</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
