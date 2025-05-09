@@ -1,3 +1,5 @@
+#include"ntpch.h"
+
 #include "Application.h"
 
 #include"nuts/Events/ApplicationEvent.h"

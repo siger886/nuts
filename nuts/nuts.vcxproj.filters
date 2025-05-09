@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ntpch.h" />
     <ClInclude Include="src\nuts.h" />
     <ClInclude Include="src\nuts\Application.h">
       <Filter>nuts</Filter>
@@ -36,6 +37,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\ntpch.cpp" />
     <ClCompile Include="src\nuts\Application.cpp">
       <Filter>nuts</Filter>
     </ClCompile>
