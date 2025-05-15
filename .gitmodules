@@ -4,3 +4,9 @@
 [submodule "nuts/vendor/spdlog"]
 	path = nuts/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "nut/vendor/GLFW"]
+	path = nut/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "nuts/vendor/GLFW"]
+	path = nuts/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

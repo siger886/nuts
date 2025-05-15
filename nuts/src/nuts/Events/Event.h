@@ -1,7 +1,7 @@
 #pragma once
 
 #include "nuts/core.h"
-
+#include"ntpch.h"
 
 
 namespace nuts{

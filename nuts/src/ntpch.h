@@ -9,7 +9,7 @@
 #include<vector>
 #include<unordered_map>
 #include<unordered_set>
-
+#include "nuts/Log.h"
 #ifdef NT_PLATFORM_WINDOWS
 #include<Windows.h>
 #endif // NT_PLATFORM_WINDOWS

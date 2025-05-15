@@ -1,3 +1,5 @@
+
+
 workspace "nuts"
 	architecture "x64"
 
@@ -9,6 +11,13 @@ workspace "nuts"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "nuts/vendor/GLFW/include"
+
+include "nuts/vendor/GLFW"
+
 
 project "nuts"
 	location "nuts"
@@ -29,7 +38,15 @@ project "nuts"
 
 	includedirs
 	{	"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib",
+		"dwmapi.lib"
 	}
 
 	filter "system:windows"

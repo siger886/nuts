@@ -1,13 +1,13 @@
 #include"ntpch.h"
 
 #include "Application.h"
-
+#include<GLFW/glfw3.h>
 #include"nuts/Events/ApplicationEvent.h"
 #include"nuts/Log.h"
 namespace nuts {
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 	Application::~Application()
 	{
@@ -15,15 +15,12 @@ namespace nuts {
 	}
 	void Application::Run()
 	{	
-		WindowResizeEvent  e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		while(m_Running)
 		{
-			NT_TRACE(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			NT_TRACE(e);
-		}
-		while (true);
+		
 	}
 }
